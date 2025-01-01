@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        *, html, body {
+            font-size: 0.99em;
+        }
+        .heading1 {
+            margin-left: 60px;
+        }
+        .heading2 {
+            margin-left: 60px;
+        }
+        .heading2 {
+            margin-left: 30px;
+        }
+        pre { 
+            border: 1px solid #000;
+            padding: 5px;
+        }
+        .command {
+            color: #AAA;
+        }
+        .grep { 
+            font-family: monospace;
+        }
+        .grep_filepath {
+            color: #00F;
+        }
+        .grep_line {
+            color: #5A5;
+        }
+        .grep_keyword {
+            color: #F00;
+        }
+        .hide {
+            color: #AAA;
+        }
+        .warning {
+            color: #F00;
+        }
+        .infos {
+            font-size: 10pt;
+            font-style: italic;
+        }
+        .unit {
+            margin-left: 150px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu"></ul>
+
+    <div class="heading heading1">
+        <h1>Basic Information</h1>
+        <div id="infos">
+            <div>Report Date: 06/12/2024</div>
+            <div>Package: com.amazon.aws.console.mobile</div>
+            <div>Build: 34</div>
+            <div>Android Version: 1912000258</div>
+        </div>
+    </div>
+    <hr />
+
+    <div class="heading heading1">
+        <h1>Permissions</h1>
+        <div id="infos">
+            <div><ul><li>android.permission.INTERNET</li>
+<li>android.permission.ACCESS_NETWORK_STATE</li>
+<li>android.permission.READ_EXTERNAL_STORAGE</li>
+<li>android.permission.WRITE_EXTERNAL_STORAGE</li>
+<li>android.permission.POST_NOTIFICATIONS</li>
+<li>android.permission.USE_BIOMETRIC</li>
+<li>android.permission.USE_FINGERPRINT</li>
+<li>android.permission.WAKE_LOCK</li>
+<li>com.google.android.c2dm.permission.RECEIVE</li>
+<li>android.permission.RECEIVE_BOOT_COMPLETED</li>
+<li>android.permission.FOREGROUND_SERVICE</li>
+<li>com.amazon.aws.console.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</li></ul></div>
+        </div>
+    </div>
+    <hr />
+
+    <div class="heading heading1">
+        <h1>Dangerous Permissions</h1>
+        <div id="infos">
+            <div><ul><li>android.permission.READ_EXTERNAL_STORAGE</li>
+<li>android.permission.WRITE_EXTERNAL_STORAGE</li>
+<li>android.permission.RECEIVE_BOOT_COMPLETED</li></ul></div>
+        </div>
+    </div>
+    <hr />
+
+    <div class="heading heading1">
+        <h1>Intents</h1>
+        <div class="grep"><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/i.java</span>:<span class="grep_line">12</span>:        super(new s("AppUpdateListenerRegistry"), <span class="grep_keyword">new Intent</span>Filter("com.google.android.play.core.install.ACTION_INSTALL_STATUS"), context);</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/w.java</span>:<span class="grep_line">8</span>:import android.app.<span class="grep_keyword">PendingIntent</span>;</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/w.java</span>:<span class="grep_line">29</span>:    private static final Intent f5890f = <span class="grep_keyword">new Intent</span>("com.google.android.play.core.install.BIND_UPDATE_SERVICE").setPackage("com.android.vending");</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/w.java</span>:<span class="grep_line">84</span>:        return C1300a.f(str, i10, i11, i12, valueOf, bundle.getInt("in.app.update.priority", 0), bundle.getLong("bytes.downloaded"), bundle.getLong("total.bytes.to.download"), bundle.getLong("additional.size.required"), wVar.f5894d.a(), (<span class="grep_keyword">PendingIntent</span>) bundle.getParcelable("blocking.intent"), (<span class="grep_keyword">PendingIntent</span>) bundle.getParcelable("nonblocking.intent"), (<span class="grep_keyword">PendingIntent</span>) bundle.getParcelable("blocking.destructive.intent"), (<span class="grep_keyword">PendingIntent</span>) bundle.getParcelable("nonblocking.destructive.intent"), hashMap);</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">3</span>:import android.app.<span class="grep_keyword">PendingIntent</span>;</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">40</span>:    private final <span class="grep_keyword">PendingIntent</span> f5857k;</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">43</span>:    private final <span class="grep_keyword">PendingIntent</span> f5858l;</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">46</span>:    private final <span class="grep_keyword">PendingIntent</span> f5859m;</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">49</span>:    private final <span class="grep_keyword">PendingIntent</span> f5860n;</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">57</span>:    private C1300a(String str, int i10, int i11, int i12, Integer num, int i13, long j10, long j11, long j12, long j13, <span class="grep_keyword">PendingIntent</span> pendingIntent, <span class="grep_keyword">PendingIntent</span> pendingIntent2, <span class="grep_keyword">PendingIntent</span> pendingIntent3, <span class="grep_keyword">PendingIntent</span> pendingIntent4, Map map) {</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">75</span>:    public static C1300a f(String str, int i10, int i11, int i12, Integer num, int i13, long j10, long j11, long j12, long j13, <span class="grep_keyword">PendingIntent</span> pendingIntent, <span class="grep_keyword">PendingIntent</span> pendingIntent2, <span class="grep_keyword">PendingIntent</span> pendingIntent3, <span class="grep_keyword">PendingIntent</span> pendingIntent4, Map map) {</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">109</span>:    public final <span class="grep_keyword">PendingIntent</span> e(AbstractC1303d dVar) {</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">111</span>:            <span class="grep_keyword">PendingIntent</span> pendingIntent = this.f5858l;</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I7/C1300a.java</span>:<span class="grep_line">121</span>:            <span class="grep_keyword">PendingIntent</span> pendingIntent2 = this.f5857k;</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I5/k.java</span>:<span class="grep_line">55</span>:            Intent <span class="grep_keyword">registerReceiver</span> = context.<span class="grep_keyword">registerReceiver</span>(null, <span class="grep_keyword">new Intent</span>Filter("android.intent.action.BATTERY_CHANGED"));</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I5/k.java</span>:<span class="grep_line">56</span>:            if (<span class="grep_keyword">registerReceiver</span> != null) {</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I5/k.java</span>:<span class="grep_line">57</span>:                map.put("batteryLevel", e(<span class="grep_keyword">registerReceiver</span>));</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/I5/k.java</span>:<span class="grep_line">58</span>:                map.put("isCharging", n(<span class="grep_keyword">registerReceiver</span>));</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/M5/f.java</span>:<span class="grep_line">26</span>:            this.f8466a.un<span class="grep_keyword">registerReceiver</span>(this);</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/J7/r.java</span>:<span class="grep_line">44</span>:                this.f7002c.<span class="grep_keyword">registerReceiver</span>(qVar2, this.f7001b, 2);</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/J7/r.java</span>:<span class="grep_line">46</span>:                this.f7002c.<span class="grep_keyword">registerReceiver</span>(qVar2, this.f7001b);</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/J7/r.java</span>:<span class="grep_line">50</span>:            this.f7002c.un<span class="grep_keyword">registerReceiver</span>(qVar);</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/J7/x.java</span>:<span class="grep_line">27</span>:                    d11.f6974a.un<span class="grep_keyword">bindService</span>(d11.f6985l);</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/J7/D.java</span>:<span class="grep_line">110</span>:            if (!d10.f6974a.<span class="grep_keyword">bindService</span>(d10.f6981h, c10, 1)) {</div><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/C2/j.java</span>:<span class="grep_line">98</span>:            context.<span class="grep_keyword">startActivity</span>(<span class="grep_keyword">new Intent</span>(context, MainActivity.class));</div></div>
+    </div>
+    <hr />
+
+    <div class="heading heading1">
+        <h1>Storage</h1>
+
+        <div class="heading heading2">
+            <h2>Internal storage</h2>
+            <div class="grep"></div>
+        </div>
+
+        <div class="heading heading2">
+            <h2>External storage</h2>
+            <div class="grep"><div><span class="grep_filepath">/home/kali/APKDeepLens/app_source/aws.apk/sources/D/C1198f.java</span>:<span class="grep_line">31</span>:    private static final float f2373b = h.m((float) ConnectionResult.DRIVE_<span class="grep_keyword">EXTERNAL_STORAGE</span>_REQUIRED);</div></div>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Your JavaScript stays the same -->
+    <script type="text/javascript" src="jquery-3.4.1.slim.min.js"></script>
+    <script>
+        var cur = 1;
+        var str = '';
+        var menu = $('#menu');
+        $('body').find(':header').each(function(index){
+            lvl = $(this).prop('tagName').replace('H','');
+            if( lvl > cur ) {
+                str = str + '<ul>';
+            } else if( lvl < cur ) {
+                str = str + '</ul>';
+            }
+            cur = lvl;
+            str = str + '<li><a href="">' + $(this).text() + '</a></li>';
+        });
+        menu.append( str );
+    </script>
+
+</body>
+
+</html>
